@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/m_menu_bg">
+    <LinearLayout
+
+        android:id="@+id/Ltest"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <Button
+            android:background="@color/simiTransparent"
+            android:id="@+id/user"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:text="用户"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/user_states"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="用户状态"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/user"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="设置"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:textSize="20sp"
+        android:background="@color/simiTransparent"
+        android:id="@+id/light"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/Ltest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:text="灯光控制" />
+
+    <Button
+        android:textSize="20sp"
+        android:background="@color/simiTransparent"
+        android:id="@+id/aircondition"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="空调控制"
+        android:layout_below="@+id/light"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:textSize="20sp"
+        android:background="@color/simiTransparent"
+        android:id="@+id/other_device"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="其他模块"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/aircondition"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
